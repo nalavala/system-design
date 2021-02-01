@@ -13,7 +13,11 @@ This is my perspective of designing spotify
 
 ## List of services and functionalities
 1. Songs service
+
+    This service is responsiable to perform all the curd operations related to songs.
 2. Trending Service
+
+    This service is responsiable to fetch all trending songs based on different context like languages,time(year,month),users etc. This service is prepare the data beforehand to avoid latency while fetching trending songs. This listens to the events emited by songs service like view,upload etc. It prepares the data based on the events for fast retrival.
 
 
 ## Data models
